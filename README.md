@@ -5,8 +5,8 @@
             @Override
             protected <T extends BaseBean> void convert(BaseViewHolder holder, T baseBean) {
                 UserBean user = (UserBean) baseBean;
-//                TextView name = holder.itemView.findViewById(R.id.textView);
-//                name.setText(user.getName());
+                // TextView name = holder.itemView.findViewById(R.id.textView);
+                // name.setText(user.getName());
                 holder.setText(R.id.textView, user.getName());
             }
         };
