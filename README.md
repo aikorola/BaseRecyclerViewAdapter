@@ -1,6 +1,7 @@
 # BaseRecyclerViewAdapter
 # 使用
 
+```Java
         BaseRecyclerAdapter adapter = new BaseRecyclerAdapter(R.layout.main_recycle_item, data) {
             @Override
             protected <T extends BaseBean> void convert(BaseViewHolder holder, T baseBean) {
@@ -23,3 +24,4 @@
             }
         });
         mRecyclerView.setAdapter(adapter);
+```
