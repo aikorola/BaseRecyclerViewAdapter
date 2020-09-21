@@ -4,10 +4,7 @@
 ```Kotlin
         val data = mutableListOf<UserInfo>()
 
-        (1..100).forEach {
-            val value = it.plus(1)
-            data.add(UserInfo("张三$value", value))
-        }
+        (1..100).forEach { data.add(UserInfo("张三$it", it)) }
 
         userRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
         userRecyclerView.adapter = UserAdapter(data)
